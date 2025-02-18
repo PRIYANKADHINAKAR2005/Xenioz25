@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xenioz</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<video id="loadingVideo" src="loading.mkv" autoplay muted></video>
+
+<div class="parallax-container">
+  <img src="sky-bg.png" class="layer layer1" alt="Sky Background">
+  <img src="sky1.png" class="layer layer2" alt="Clouds">
+  <img id="sky2" src="sky2.png" class="layer layer2" style="right: 1%; z-index: 4" alt="Clouds">
+  <img src="hogwarts.png" class="layer layer3" alt="Hogwarts">
+  <img class="logo-main" src="logo-main.png">
+  <h1 class="xeniox-title">Xenioz<span>'25</span></h1>
+</div>
+
+<div class="content">
+
+  <div class="countdown-container">
+  <div class="countdown-box" id="days">00<div class="label">Days</div></div>
+    <p class="colon">:</p>
+  <div class="countdown-box" id="hours">00<div class="label">Hours</div></div>
+    <p class="colon">:</p>
+  <div class="countdown-box" id="minutes">00<div class="label">Minutes</div></div>
+    <p class="colon">:</p>
+  <div class="countdown-box" id="seconds">00<div class="label">Seconds</div></div>
+</div>
+
+  <h1 class="about-title"> About event</h1>
+  <p class="about-para-1">Potterheads, your journey to magic and learning starts at Xenioz! 🧙‍♀️✨
+    From Diagon Alley to the world of algorithms—Xenioz is where tech wizards thrive! 🪄💻
+    Enter the Wizarding World of Xenioz—where ideas are as powerful as spells. ⚡️💭
+  </p>
+
+  <div class="svg-separator">
+    <svg style="width: 64%;" xmlns="http://www.w3.org/2000/svg" width="701" height="85" viewBox="0 0 701 85" fill="none">
+      <path d="M0 44H253.986M701 44H449.046M253.986 44L276.336 24.5L300.363 43.7152M253.986 44H300.719M253.986 44L276.336 60.5L300.719 44M300.719 44C300.719 44 307.626 53 314.942 53C322.258 53 329.165 44 329.165 44M300.719 44H329.165M300.719 44L300.363 43.7152M329.165 44C329.165 44 324.818 32.8832 316.974 32C308.105 31.0015 300.363 43.7152 300.363 43.7152M329.165 44L351.516 5L375.899 44M329.165 44L351.516 80L375.899 44M375.899 44C375.899 44 380.854 53.7032 388.09 54.5C396.969 55.4778 404.345 42.5 404.345 42.5M375.899 44H449.046M375.899 43.7152C375.899 43.7152 379.703 31.3077 388.09 30.5C396.992 29.6427 404.345 42.5 404.345 42.5M404.345 42.5L424.664 24.5L449.046 44M404.345 42.5L424.664 59L449.046 44" stroke="url(#paint0_linear_64_37)" stroke-width="5"/>
+      <path d="M0 44H253.986M701 44H449.046M253.986 44L276.336 24.5L300.363 43.7152M253.986 44H300.719M253.986 44L276.336 60.5L300.719 44M300.719 44C300.719 44 307.626 53 314.942 53C322.258 53 329.165 44 329.165 44M300.719 44H329.165M300.719 44L300.363 43.7152M329.165 44C329.165 44 324.818 32.8832 316.974 32C308.105 31.0015 300.363 43.7152 300.363 43.7152M329.165 44L351.516 5L375.899 44M329.165 44L351.516 80L375.899 44M375.899 44C375.899 44 380.854 53.7032 388.09 54.5C396.969 55.4778 404.345 42.5 404.345 42.5M375.899 44H449.046M375.899 43.7152C375.899 43.7152 379.703 31.3077 388.09 30.5C396.992 29.6427 404.345 42.5 404.345 42.5M404.345 42.5L424.664 24.5L449.046 44M404.345 42.5L424.664 59L449.046 44" stroke="url(#paint1_linear_64_37)" stroke-opacity="0.5" stroke-width="5"/>
+      <defs>
+        <linearGradient id="paint0_linear_64_37" x1="0" y1="42.5" x2="701" y2="42.5" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F0DF9A" stop-opacity="0"/>
+          <stop offset="0.52" stop-color="#F0DF9A"/>
+          <stop offset="1" stop-color="#F0DF9A" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_64_37" x1="351" y1="5" x2="351" y2="85.5" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F0DF9A"/>
+          <stop offset="0.837209" stop-color="#9B602D"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+  </div>
+  <h1 class="about-title"> Rules</h1>
+  <div class="rules">
+
+    <div class="rules-do">
+      <h3 class="rules-title">Do's</h3>
+      <ol>
+        <li>Students must bring their respective college ID card</li>
+        <li>Participants must only use the college bus which will be available on March 17th</li>
+        <li>Boys must come in formal with clean shave</li>
+        <li>Girls should wear formal dress</li>
+      
+      </ol>
+    </div>
+    <div class="rules-dont">
+      <h3 class="rules-title">Don'ts</h3>
+      <ol style="text-align: left;">
+        <li >Usage of mobile phones and other electronic gadgets inside the campus should be avoided</li>
+        <li>No personal vehicles are allowed</li>
+        <li>No one should leave the campus before 3.00PM</li>
+        
+      </ol>
+    </div>
+  </div>
+  <div class="svg-separator">
+    <svg style="width: 64%;" xmlns="http://www.w3.org/2000/svg" width="701" height="85" viewBox="0 0 701 85" fill="none">
+      <path d="M0 44H253.986M701 44H449.046M253.986 44L276.336 24.5L300.363 43.7152M253.986 44H300.719M253.986 44L276.336 60.5L300.719 44M300.719 44C300.719 44 307.626 53 314.942 53C322.258 53 329.165 44 329.165 44M300.719 44H329.165M300.719 44L300.363 43.7152M329.165 44C329.165 44 324.818 32.8832 316.974 32C308.105 31.0015 300.363 43.7152 300.363 43.7152M329.165 44L351.516 5L375.899 44M329.165 44L351.516 80L375.899 44M375.899 44C375.899 44 380.854 53.7032 388.09 54.5C396.969 55.4778 404.345 42.5 404.345 42.5M375.899 44H449.046M375.899 43.7152C375.899 43.7152 379.703 31.3077 388.09 30.5C396.992 29.6427 404.345 42.5 404.345 42.5M404.345 42.5L424.664 24.5L449.046 44M404.345 42.5L424.664 59L449.046 44" stroke="url(#paint0_linear_64_37)" stroke-width="5"/>
+      <path d="M0 44H253.986M701 44H449.046M253.986 44L276.336 24.5L300.363 43.7152M253.986 44H300.719M253.986 44L276.336 60.5L300.719 44M300.719 44C300.719 44 307.626 53 314.942 53C322.258 53 329.165 44 329.165 44M300.719 44H329.165M300.719 44L300.363 43.7152M329.165 44C329.165 44 324.818 32.8832 316.974 32C308.105 31.0015 300.363 43.7152 300.363 43.7152M329.165 44L351.516 5L375.899 44M329.165 44L351.516 80L375.899 44M375.899 44C375.899 44 380.854 53.7032 388.09 54.5C396.969 55.4778 404.345 42.5 404.345 42.5M375.899 44H449.046M375.899 43.7152C375.899 43.7152 379.703 31.3077 388.09 30.5C396.992 29.6427 404.345 42.5 404.345 42.5M404.345 42.5L424.664 24.5L449.046 44M404.345 42.5L424.664 59L449.046 44" stroke="url(#paint1_linear_64_37)" stroke-opacity="0.5" stroke-width="5"/>
+      <defs>
+        <linearGradient id="paint0_linear_64_37" x1="0" y1="42.5" x2="701" y2="42.5" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F0DF9A" stop-opacity="0"/>
+          <stop offset="0.52" stop-color="#F0DF9A"/>
+          <stop offset="1" stop-color="#F0DF9A" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_64_37" x1="351" y1="5" x2="351" y2="85.5" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F0DF9A"/>
+          <stop offset="0.837209" stop-color="#9B602D"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+  </div>
+
+  <h1 class="about-title">Events</h1>
+
+  <div class="events">
+    <div class="events-tech">
+      <h3 class="events-title">Technical events</h3>
+      <ol style="margin-left:70px;">
+        <li>Code Gamble</li>  
+        <li>The Pemsieve Papers</li>
+        <li>Chase the Dementors</li>   
+       
+      </ol>
+     <br>
+      <a href="./tech.html"  style="width: 100%;" >
+        <img src="cko.png" alt="" style="margin-left:10% ;width:70%;">
+      </a>
+      
+
+    </div>
+    <div class="events-non-tech">
+      <h3 class="events-title">Non-Technical events</h3>
+      <ol   style="margin-left:100px;">
+        <li>Horcurux Hunt</li>  
+        <li>Connections</li>
+        <li>Wizard's World Cup</li> 
+
+      </ol>
+      <br>
+    
+      <a href="./show.html"  style="width: 100%;" >
+        <img src="cko.png" alt="" style="margin-left:10% ;width:70%;">
+      </a>
+      
+    </div>
+  
+  </div>
+
+  
+    <div class="timeline">
+        <!-- Technical Events -->
+        <div class="event1">
+            <h3>The Pensieve Papers</h3>
+            <p>10:00 AM - 1:00 PM</p>
+        </div>
+        <div class="event1">
+            <h3>Chase the Dementors</h3>
+            <p>11:00 AM - 12:00 PM</p>
+        </div>
+        <div class="event1">
+            <h3>Code Gamble</h3>
+            <p>10:00 AM - 11:00 AM</p>
+        </div>
+        
+        <!-- Non-Technical Events -->
+        <div class="event1">
+            <h3>Wizards' World Cup</h3>
+            <p>10:00 AM - 11:00 AM</p>
+        </div>
+        <div class="event1">
+            <h3>Spellbound Connections</h3>
+            <p>11:00 AM - 12:00 PM</p>
+        </div>
+        <div class="event1">
+            <h3>Horcrux Hunt</h3>
+            <p>12:00 PM - 1:00 PM</p>
+        </div>
+    </div>
+    <br><br>
+
+  <div class="footer">
+
+    <div class="footer__addr">
+      <img class="footer__logo" src="logo2.png" alt="">
+
+      <button class="social-btn">
+       <span class="social-btn-text" onclick='window.location.href="https://www.instagram.com/xenioz_25/?__pwa=1"'>Follow us on Instagram</span>
+      </button>
+
+      <button class="social-btn">
+        <span class="social-btn-text" onclick='window.location.href="https://www.google.com/maps/place/RMK+College+of+Engineering+and+Technology+(RMKCET)/@13.32409,80.1512006,17z/data=!3m1!4b1!4m6!3m5!1s0x3a527f0ddef76d17:0x61ce593720f3684b!8m2!3d13.32409!4d80.1512006!16s%2Fm%2F0h98k_h?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"'>College Location</span>
+      </button>
+
+    </div>
+
+
+    <div class="footer-links-box">
+      <div class="footer-links1">
+        <a class="lnk-title">Useful Links</a>
+        <div class="footer-subs">
+          <a class="lnk-subs">About us<br></a>
+          <a class="lnk-subs">Rules<br></a>
+          <a class="lnk-subs">Events<br></a>
+        </div>
+      </div>
+      <div class="footer-links2">
+        <a class="lnk-title2">Staff Coordinators</a>
+        <div class="footer-subs2">
+          <a class="lnk-subs">Ms.Jemi Gold P<br></a>
+        </div>
+      </div>
+      <div class="footer-links3">
+        <a class="lnk-title3">Organizers</a>
+        <div class="footer-subs3">
+          <a class="lnk-subs">Calvin Samuel<br></a>
+          <a class="lnk-subs">Akash Gupta<br></a>
+        </div>
+      </div>
+      <div class="footer-links4">
+
+        <a class="lnk-title3">Technical Coordinators</a>
+        <div class="footer-subs3">
+          <a class="lnk-subs">Priyadharshini J<br></a>
+          <a class="lnk-subs">Balagovind<br></a>
+
+        <a class="lnk-title4">Non-Technical Coordinators</a>
+        <div class="footer-subs4">
+          <a class="lnk-subs">Priyanka D L<br></a>
+          <a class="lnk-subs">Rohit Surya R S T<br></a>
+          <a class="lnk-subs">Mohamed Mukhthaseem<br></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<audio src="bgm.mp3" id="myAudio"></audio>
+<script>
+
+  
+  window.addEventListener("load", () => {
+    let audio = document.getElementById("myAudio");
+    audio.volume = 0.03;
+    audio.play().catch(error => console.log("Autoplay blocked:", error));
+})
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".layer1", {
+    y: -50,
+    scale: 1.1,
+    scrollTrigger: {
+      trigger: ".parallax-container",
+      start: "top top",
+      end: "bottom top",
+      scrub: 1,
+    }
+  });
+
+  gsap.to(".layer2", {
+    y: -100,
+    x: 10,
+    scale: 1.15,
+    scrollTrigger: {
+      trigger: ".parallax-container",
+      start: "top top",
+      end: "bottom top",
+      scrub: 1,
+    }
+  });
+
+  gsap.to(".layer3", {
+    y: -200,
+    x: -10,
+    scale: 1.2,
+    scrollTrigger: {
+      trigger: ".parallax-container",
+      start: "top top",
+      end: "bottom top",
+      scrub: 1,
+    }
+  });
+
+  gsap.to(".mist", {
+    opacity: 0.5,
+    scale: 1.05,
+    scrollTrigger: {
+      trigger: ".parallax-container",
+      start: "top top",
+      end: "bottom top",
+      scrub: 1,
+    }
+  });
+
+  // Floating effect for layers
+  gsap.to(".layer2, .layer3", {
+    y: "10px",
+    repeat: -1,
+    yoyo: true,
+    duration: 3,
+    ease: "power1.inOut"
+  });
+
+  function startCountdown(duration) {
+    function updateCountdown() {
+      let days = Math.floor(duration / (24 * 60 * 60));
+      let hours = Math.floor((duration % (24 * 60 * 60)) / (60 * 60));
+      let minutes = Math.floor((duration % (60 * 60)) / 60);
+      let seconds = duration % 60;
+
+      document.getElementById("days").firstChild.nodeValue = days.toString().padStart(2, '0');
+      document.getElementById("hours").firstChild.nodeValue = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").firstChild.nodeValue = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").firstChild.nodeValue = seconds.toString().padStart(2, '0');
+
+      if (duration > 0) {
+        duration--;
+        setTimeout(updateCountdown, 1000);
+      } else {
+        document.getElementById("days").firstChild.nodeValue = "00";
+        document.getElementById("hours").firstChild.nodeValue = "00";
+        document.getElementById("minutes").firstChild.nodeValue = "00";
+        document.getElementById("seconds").firstChild.nodeValue = "00";
+      }
+    }
+
+    updateCountdown();
+  }
+
+  // Initial countdown duration: 30 days, 12 hours, 20 minutes, 30 seconds
+  const totalSeconds = (30 * 24 * 60 * 60) + (12 * 60 * 60) + (20 * 60) + 30;
+  startCountdown(totalSeconds);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let video = document.getElementById("loadingVideo");
+    let content = document.getElementById("content");
+
+    setTimeout(() => {
+      video.style.opacity = "0"; // Fade out the video
+      setTimeout(() => {
+        video.style.display = "none"; // Remove video after fade-out
+        content.style.opacity = "1"; // Show page content
+      }, 1000);
+    }, 5000); // Show video for 5 seconds
+  });
+</script>
+
+</body>
+</html>

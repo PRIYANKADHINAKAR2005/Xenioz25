@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events</title>
+  <link rel="stylesheet" href="tech.css" />
+</head>
+<body>
+  <!-- Custom cursor (don't change this) -->
+  <!-- <div id="cursor" class="custom-cursor"></div> -->
+  
+  <nav>
+    <div class="nav">
+    <!-- <img src="colog.png" alt="" style="width: 5%;height:80%"> -->
+    <!-- <img src="" alt="">
+      -->
+    <div class="titl">
+      XENIOZ '25
+    </div>
+    <div class="navin">
+      <a href="./aboutevent.html">Home</a>
+      <a href="./show.html">Non-Tech Events</a>
+    </div>
+  </div>
+  </nav>
+   <hr style="width:90%;height:0;border:1px solid rgba(255, 217, 0, 0.18);border-radius:100%;margin:auto">
+
+
+
+  <div class="container">
+    <!-- LEFT PANEL (Big Box with video background) -->
+    <div class="left-panel">
+      <div class="big-box glitter" id="bigBox1" >
+
+
+       
+        <video id="bigVideo" autoplay muted loop>
+          <source src="bgv1.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="overlay">
+          <br><br>
+          <img src="codegamble.png" alt="" style="width: 80%;margin-top:0px;height:18%">
+        <br><br>
+          <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%">
+          <br><br>
+          <div style="text-align:justify;color:rgba(247, 231, 144, 0.852);width:80%;margin:auto;font-size:larger;font-family:Arial, Helvetica, sans-serif" class="txt">Code Gamble is a strategic programming event where teams must bid on 
+            the time they require to solve a given coding problem. The lower the bid, 
+            the earlier they get a chance to solve it. </div>
+
+            <br><br>
+            <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%"> <br><br>
+            <!-- <img src="vbut.png" alt="" style="width: 30%;height:10%" class="sh"> -->
+             <img src="cko.png" alt="" style="width: 60%;height:15%" id="b1" onclick="scrollDown();">
+        </div>
+
+      </div>
+
+      <div class="big-box glitter" id="bigBox2"  style="display: none;">
+
+
+       
+        <video id="bigVideo" autoplay muted loop>
+          <source src="bgv2.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="overlay">
+          <br><br>
+          <img src="paper.png" alt="" style="width: 90%;margin-top:20px;height:20%">
+          <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%">
+          <br><br>
+          <div style="text-align:justify;color:rgba(247, 231, 144, 0.852);width:80%;margin:auto;font-size:larger;font-family:Arial, Helvetica, sans-serif" class="txt">Aspiring wizards will showcase their magical discoveries on cutting-edge enchantments before a council of esteemed professors and judges. </div>
+
+            <br>            <img src="bar.png" alt="" style="width: 60%;height:5%"> <br><br>
+            <img src="cko.png" alt="" style="width: 60%;height:15%" id="b2" onclick="scrollDown();">
+
+        </div>
+  
+      </div>
+
+      <div class="big-box glitter" id="bigBox3"  style="display: none;">
+
+
+       
+        <video id="bigVideo" autoplay muted loop>
+          <source src="bgv3.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="overlay">
+          <br>
+          <img src="debug.png" alt="" style="width: 90%;margin-top:20px;height:23%">
+          <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%">
+          <br><br>
+          <div style="text-align:justify;color:rgba(247, 231, 144, 0.852);width:80%;margin:auto;font-size:larger;font-family:Arial, Helvetica, sans-serif" class="txt">
+            Participants will debug multiple code snippets within a given time. A row 
+of systems will be set up, each with a different Java or C++ question. 
+Participants must debug the code within the allocated time before moving 
+to the next system.  </div>
+<br>
+            
+            <img src="bar.png" alt="" style="width: 60%;height:5%"> <br>
+            <img src="cko.png" alt="" style="width: 60%;height:15%" id="b3"  onclick="scrollDown();">
+
+          </div>
+      </div>
+    </div>
+  
+
+
+
+
+
+    <div class="right-panel" id="rm">
+      <div class="top-bar " id="topBar"  style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+        <img src="bar.png" alt="" style="width: 60%;height:10%">
+          <img src="tech.png" alt="" style="width: 90%;height:50%">
+            <img src="bar.png" alt="" style="width: 60%;height:10%">
+      </div>
+      <div class="small-boxes">
+        <div class="small-box glitter" data-video="video2.mp4" id="smallBox1" style="display: none;" onclick="scrollUp();">
+          <video autoplay muted loop>
+            <source src="bgv1.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <div class="overlay" style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+          <img src="codegamble.png" alt="" style="width: 90%;height:20%" class="head">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+           
+          </div>
+        </div>
+        <div class="small-box glitter" data-video="video3.mp4" id="smallBox2" onclick="scrollUp();">
+          <video autoplay muted loop>
+            <source src="bgv2.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <div class="overlay" style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+          <img src="paper.png" alt="" style="width: 90%;height:20%" class="head">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+           
+          </div>
+        </div>
+
+        <div class="small-box glitter" data-video="video3.mp4" id="smallBox3" onclick="scrollUp();" >
+          <video autoplay muted loop>
+            <source src="bgv3.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <div class="overlay" style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+          <img src="debug.png" alt="" style="width: 90%;height:20%" class="head">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="right-panel" style="display: none;" id="r1">
+      <div style="color: rgb(244, 207, 72);padding:30px;font-size:125%;font-family:monospace;width:100%;animation:float 2.5s infinite;padding-top:10px">
+        <!-- <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Event Format & Rules: </div><br> -->
+        <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);">Round 1: MCQ Challenge  (Points Accumulation)</div>
+        <ol>
+            <li>Each team gets an MCQ with 30 seconds to answer.</li>
+            <li>Scoring:
+                <ul>
+                    <li>Correct: <strong>500 points</strong></li>
+                    <li>Wrong/No Answer: Passed to next team for <strong>250 points</strong></li>
+                </ul>
+            </li>
+        </ol>
+        <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);">Round 2: Bidding Round (Point Boosting)</div>
+        <ol>
+            <li>All teams get the same coding question & bid their solving time.</li>
+            <li>Scoring:
+                <ul>
+                    <li> Solved in bid time: <strong>(Max Bid - Your Bid) × 100 points</strong></li>
+                    <li> Failed: <strong>0 points</strong></li>
+                </ul>
+            </li>
+        </ol>
+        <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);">Round 3: Final Bidding (Elimination Round)</div>
+        <ol>
+            <li>Top 5 teams qualify.</li>
+            <li>Two coding problems, teams bid for solving time.</li>
+            <li>Lowest bidder attempts first; failure passes the chance.</li>
+            <li>Scoring:
+                <ul>
+                    <li> Solved: <strong>Points doubled</strong></li>
+                    <li> Failed: <strong>Lose 50% of points</strong></li>
+                </ul>
+            </li>
+            <li>Top 3 teams win! </li>
+        </ol>
+
+<div>
+
+</div>
+
+</div>
+<div style="width: 100%;display:flex;justify-content:space-between;align-items:center;margin-top:-30px" class="butt">
+  <img src="back.png" alt="" style="width: 50%;height:15%" id="bk1">
+  <img src="register.png" alt="" style="width: 50%;height:15%" id="rr1" onclick='window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSdJtBh0iSunR5GkYA2LuMQUblisD89c46qgAtp94U3ABmcGxw/viewform?usp=sharing"'>
+</div>
+    </div>
+
+    <div class="right-panel" style="display: none;" id="r2">
+      <div style="color: rgb(244, 207, 72);padding:30px;font-size:125%;font-family:monospace;width:100%;animation:float 2.5s infinite;padding-top:10px">
+        <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Domains: 
+    </div><br>
+     <div>
+      -Artificial Intelligence & Machine Learning <br>
+      - Cybersecurity & Blockchain <br>
+      - Cloud Computing & Big Data <br>
+      - Internet of Things (IoT) <br>
+      - Software Engineering & Development <br>
+      - Computer Vision & Image Processing<br>
+</div>
+<br>
+<img src="bar.png" alt="" style="width: 60%;height:6%;margin-left:20%"> <br>
+<div><br>
+  <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);">Time Allotment: </div><br>
+   Presentation: 10 minutes <br>
+   Q&A Session: 5 minutes <br>
+   Total Duration: 1.5 hours (depending on the number of participants)<br>
+</div>
+<img src="bar.png" alt="" style="width: 60%;height:6%;margin-left:20%"> <br>
+<div>
+  
+</div>
+<br>
+<div style="width: 100%;display:flex;justify-content:space-between;align-items:center;" class="butt">
+  <img src="back.png" alt="" style="width: 50%;height:15%" id="bk2">
+  <img src="register.png" alt="" style="width: 50%;height:15%" id="rr1" onclick='window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSfktRIQDILov4RrkJ1z2Y5Emd0FsoE6v0Loz6acKGEYKPo4bA/viewform"'>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="right-panel"  style="display: none;" id="r3">
+  <div style="color: rgb(244, 207, 72);padding:30px;font-size:125%;font-family:monospace;width:100%;animation:float 2.5s infinite;padding-top:10px">
+    <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Event Format: </div><br>
+ <div style="text-align: justify;">
+  <ol>
+  <li> Individual event.</li> 
+  <li> Questions will be given in Java or C++.</li> 
+  <li> Time Limit: 2 minutes per system.</li>
+  </ol>
+<img src="bar.png" alt="" style="width: 60%;height:6%;margin-left:20%"> <br>
+<div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);">Rules:</div>
+  <ol>
+  <li> Movement: After 2 minutes, participants must rotate to the next 
+  system. </li>
+  <li> No Return Rule: Participants cannot return to previously attempted 
+  systems. </li>
+  <li> Winning Criteria: The participant who debugs the most problems 
+  first wins. In case of a tie, completion time will be considered. </li>
+  <li> Disqualification: Copying code from another participant or 
+  tampering with code structure is prohibited. </li>
+</ol>
+</div>
+<br>
+<div>
+  
+</div>
+<br>
+<div style="width: 100%;display:flex;justify-content:space-between;align-items:center;" class="butt">
+  <img src="back.png" alt="" style="width: 50%;height:15%"  id="bk3">
+  <img src="register.png" alt="" style="width: 50%;height:15%" id="rr1" onclick='window.location.href="https://forms.gle/18J3kT15CWGrtUvJ9"'>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+  
+   
+  </div>
+
+  <br><br><br><br>
+  <br><br><br><br>
+
+
+  <script src="tech.js"></script>
+</body>
+</html>

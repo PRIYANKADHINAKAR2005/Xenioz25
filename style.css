@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#startButton {
+  position: absolute;
+  z-index: 10;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 1s ease-in-out;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out, clip-path 2s ease-in-out;
+  clip-path: circle(0% at center);
+  pointer-events: none; /* Ensures it doesn't block interactions */
+}
+.frame_1_video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#startButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  margin-top: 20px;
+}
+.button-design{
+  width: 300px;
+}
+/* Hover effect */
+#startButton:hover {
+  transform: scale(1.1); /* Slightly enlarges */
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.6)); /* Glow effect */
+}
+
+/* Change fill and stroke on hover */
+#startButton:hover .svg-fill {
+  fill: url(#paint0_linear_62_5);
+  opacity: 0.8;
+}
+
+#startButton:hover .svg-stroke {
+  stroke: #ffffff;
+}
+.button-text {
+  position: absolute;
+  font-size: 29px;
+  font-weight: bold;
+  color: white;
+  font-family: "Ringbearer", sans-serif;
+  letter-spacing: 2px;
+  pointer-events: none;
+  width: max-content;
+  left: 69px;
+  top: 36px;
+}

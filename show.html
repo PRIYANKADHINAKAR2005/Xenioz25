@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events</title>
+  <link rel="stylesheet" href="show.css" />
+</head>
+<body style="overflow-x: hidden;">
+  <!-- Custom cursor (don't change this) -->
+  <!-- <div id="cursor" class="custom-cursor"></div> -->
+
+  <nav>
+    <div class="nav">
+    <!-- <img src="colog.png" alt="" style="width: 5%;height:80%"> -->
+    <!-- <img src="" alt="">
+      -->
+    <div class="titl">
+      XENIOZ '25
+    </div>
+    <div class="navin">
+      <a href="./aboutevent.html">Home</a>
+      <a href="./tech.html">Tech Events</a>
+    </div>
+  </div>
+  </nav>
+   <hr style="width:110%;height:0;border:1px solid rgba(255, 217, 0, 0.18);border-radius:100%;margin:auto">
+<br>
+
+  <div class="container">
+    <!-- LEFT PANEL (Big Box with video background) -->
+    <div class="left-panel">
+      <div class="big-box glitter" id="bigBox1" >
+
+
+       
+        <video id="bigVideo" autoplay muted loop>
+          <source src="bgv1.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="overlay">
+          <br><br>
+          <img src="hunt.png" alt="" style="width: 90%;margin-top:20px;height:20%">
+        <br><br>
+          <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%">
+          <br><br>
+          <div style="text-align:justify;color:rgba(247, 231, 144, 0.852);width:80%;margin:auto;font-size:larger;font-family:Arial, Helvetica, sans-serif" class="txt">
+            Horcrux Hunt is a thrilling treasure hunt where participants solve riddles and 
+            follow clues to uncover hidden treasures. Teams must work together to 
+            navigate checkpoints and reach the final treasure first.
+          </div>
+
+            <br>  
+            <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%"> <br><br>
+            <img src="cko.png" alt="" style="width: 60%;height:15%" id="b1" onclick="scrollDown();">
+
+            <!-- <img src="vbut.png" alt="" style="width: 30%;height:10%" class="sh"> -->
+        </div>
+       
+  
+      </div>
+
+      <div class="big-box glitter" id="bigBox2"  style="display: none;">
+
+
+       
+        <video id="bigVideo" autoplay muted loop>
+          <source src="bgv2.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="overlay">
+          <br><br>
+          <img src="connect.png" alt="" style="width: 90%;margin-top:20px;height:20%">
+          <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%"">
+          <br><br>
+          <div style="text-align:justify;color:rgba(247, 231, 144, 0.852);width:80%;margin:auto;font-size:larger;font-family:Arial, Helvetica, sans-serif" class="txt">
+            
+            Connection is a game where participants use given clues to determine a 
+            common link or answer. This event challenges logical thinking and pattern 
+            recognition.</div>
+<br>
+            <br>
+            <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%"> <br><br>
+            <img src="cko.png" alt="" style="width: 60%;height:15%" id="b2" onclick="scrollDown();">
+
+        </div>
+  
+      </div>
+
+      <div class="big-box glitter" id="bigBox3"  style="display: none;">
+
+
+       
+        <video id="bigVideo" autoplay muted loop>
+          <source src="bgv3.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <div class="overlay">
+          <br>
+          <img src="wc.png" alt="" style="width: 90%;margin-top:20px;height:23%">
+          <img src="bar.png" alt="" style="width: 60%;margin-top:-30px;height:5%">
+          <br><br>
+          <div style="text-align:justify;color:rgba(247, 231, 144, 0.852);width:80%;margin:auto;font-size:larger;font-family:Arial, Helvetica, sans-serif" class="txt">
+            Wizards' World Cup is a high-energy virtual football tournament(console game- 
+f
+ ifa). Teams battle it out in knockout-style matches to determine the ultimate 
+champions.  </div>
+
+            <br>
+            <img src="bar.png" alt="" style="width: 60%;height:5%"> <br><br>
+            <img src="cko.png" alt="" style="width: 60%;height:15%" id="b3" onclick="scrollDown();">
+
+          </div>
+      </div>
+    </div>
+  
+  
+    <div class="right-panel" id="rm">
+      <div class="top-bar " id="topBar"  style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+        <img src="bar.png" alt="" style="width: 60%;height:10%">
+          <img src="nontech.png" alt="" style="width: 90%;height:50%">
+            <img src="bar.png" alt="" style="width: 60%;height:10%">
+      </div>
+      <div class="small-boxes">
+        <div class="small-box glitter" data-video="video2.mp4" id="smallBox1" style="display: none;" onclick="scrollUp();">
+          <video autoplay muted loop>
+            <source src="bgv1.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <div class="overlay" style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+          <img src="hunt.png" alt="" style="width: 90%;height:20%" class="head">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+           
+          </div>
+        </div>
+        <div class="small-box glitter" data-video="video3.mp4" id="smallBox2" onclick="scrollUp();">
+          <video autoplay muted loop>
+            <source src="bgv2.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <div class="overlay" style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+          <img src="connect.png" alt="" style="width: 90%;height:20%" class="head">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+           
+          </div>
+        </div>
+
+        <div class="small-box glitter" data-video="video3.mp4" id="smallBox3"  onclick="scrollUp();">
+          <video autoplay muted loop>
+            <source src="bgv3.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <div class="overlay" style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+          <img src="wc.png" alt="" style="width: 90%;height:20%" class="head">
+            <img src="bar.png" alt="" style="width: 60%;height:5%" class="bar">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-panel" style="display:none;" id="r1" style="margin-top:100px">
+      <div style="color: rgb(244, 207, 72);padding:30px;font-size:125%;font-family:monospace;width:100%;animation:float 2.5s infinite;padding-top:10px">
+     <!-- <div> Event Format & Rules: </div><br> -->
+     <div>
+      <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Team Composition:</div> <br>
+       1 Each team consists of 2-4 players. <br><br>
+<img src="bar.png" alt="" style="width: 60%;height:2%;margin-left:20%"> <br>
+
+<div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Format</div>
+      <ol>
+      <li> Teams solve riddles to unlock the next clue. </li>
+      <li> Clues lead to various checkpoints. </li>
+      <li> The final treasure must be located to win the hunt. </li>
+    </ol>
+    <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);">  Rules of Conduct: </div>
+      <li> Teams must stay together throughout the hunt. </li>
+      <li> No use of mobile phones or external assistance. </li>
+      <li> Tampering with or moving clues and treasures is strictly prohibited.</li>
+</div>
+<br>
+<img src="bar.png" alt="" style="width: 60%;height:6%;margin-left:20%"> <br>
+
+
+</div>
+<div style="width: 100%;display:flex;justify-content:space-between;align-items:center;margin:auto" class="butt">
+  <img src="back.png" alt="" style="width: 50%;height:80%" id="bk1">
+  <img src="register.png" alt="" style="width: 50%;height:80%" id="rr1" onclick='window.location.href="https://forms.gle/Jjz1UJe5TVz1vcFc8"'>
+</div>
+    </div>
+
+    <div class="right-panel" style="display: none;" id="r2">
+      <div style="color: rgb(244, 207, 72);padding:30px;font-size:125%;font-family:monospace;width:100%;animation:float 2.5s infinite;padding-top:10px">
+     
+        <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Format:</div> <br>
+    <ol>
+    <li> Participants will be given a set of clues. </li>
+    <li> They must analyze and connect them to determine the correct answer. </li>
+    <li> The event consists of two major themes: </li>
+  </ol>
+  <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);">Cinema </div>
+    <ol>
+    <li> Round 1: Quiz-based questions on cinema. </li>
+    <li> Round 2: Guess the lyrics of famous movie songs. </li><br>
+  </ol>
+<img src="bar.png" alt="" style="width: 60%;height:6%;margin-left:20%"> <br>
+
+  <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);">Anime </div>
+     -Format: 
+    o Only one round, which is a quiz-based competition. 
+    o Individual participation. 
+<br><br>
+
+</div>
+<br>
+<div style="width: 100%;display:flex;justify-content:space-between;align-items:center;margin:auto" class="butt">
+  <img src="back.png" alt="" style="width: 50%;height:15%" id="bk2">
+  <img src="register.png" alt="" style="width: 50%;height:15%" id="rr1" onclick='window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSdvBMBDybXbrA8U1fA7mQHWfisPxUXUH4z7am96Iq9blyWCtw/viewform?usp=header"'>
+</div>
+</div>
+
+
+
+
+<div class="right-panel"  style="display:none ;" id="r3">
+  <div style="color: rgb(244, 207, 72);padding:30px;font-size:125%;font-family:monospace;width:100%;animation:float 2.5s infinite;padding-top:10px">
+ <div> Event Format & Rules: </div><br>
+ <div style="text-align: justify;">
+ <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Team Composition:</div> <br>
+  o Each team consists of 2 players. <br><br>
+  <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Game Duration:</div> <br>
+  o Total duration: 8 minutes (4 minutes per half). <br><br>
+  <div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Tournament Format:</div> <br>
+  - Knockout Format: <br>
+  o Losing team is eliminated. <br>
+  o Winning team progresses to the next round. <br><br>
+<img src="bar.png" alt="" style="width: 60%;height:6%;margin-left:20%"> <br>
+
+<div style="font-weight:bolder;font-size:large;color: rgb(244, 220, 134);"> Rules:</div> <br>
+  1 Unnecessary or excessive pausing of the game is prohibited. <br>
+  2 Players engaging in unfair play will face disqualification. <br>
+</div>
+<br>
+<div>
+
+</div>
+<br>
+<div style="width: 100%;display:flex;justify-content:space-between;align-items:center;margin:auto" class="butt">
+  <img src="back.png" alt="" style="width: 50%;height:15%"  id="bk3">
+  <img src="register.png" alt="" style="width: 50%;height:15%" id="rr1" onclick='window.location.href="https://forms.gle/BLtMFjtYvK6D7dNe9"'>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+ 
+
+<br><br><br><br>
+<br><br><br><br>
+
+  <script src="show.js"></script>
+</body>
+</html>
