@@ -10,7 +10,12 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+@font-face {
+  font-family: 'Ringbearer';
+  src: url('Xenioz25-master\ringbearer.TTF') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   color: #222;
   font-size: 1em;
